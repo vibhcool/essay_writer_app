@@ -1,3 +1,4 @@
+from agents.agent import Agent
 
 
 class Planner(Agent):
@@ -8,5 +9,5 @@ class Planner(Agent):
             or instructions for the sections.  
     '''
 
-    def __init__(self):
-        super.__init__(PROMPT)
+    def __init__(self, tools = None):
+        super().__init__(self.PROMPT, tools)

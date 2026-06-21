@@ -1,4 +1,4 @@
-
+from agents.agent import Agent
 
 class Critic(Agent):
 
@@ -8,5 +8,5 @@ class Critic(Agent):
             Provide detailed recommendations, including requests for length, depth, style, etc.
     '''
 
-    def __init__(self):
-        super.__init__(PROMPT)
+    def __init__(self, tools = None):
+        super().__init__(self.PROMPT, tools)

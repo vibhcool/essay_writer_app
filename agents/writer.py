@@ -1,4 +1,4 @@
-
+from agents.agent import Agent
 
 class Writer(Agent):
 
@@ -9,5 +9,5 @@ class Writer(Agent):
             Utilize all the information below as needed:    
     '''
 
-    def __init__(self):
-        super.__init__(PROMPT)
+    def __init__(self, tools = None):
+        super().__init__(self.PROMPT, tools)
